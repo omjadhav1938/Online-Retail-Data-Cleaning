@@ -1,0 +1,7 @@
+1. Positive-value sales lines total £10,642,110.80 across 19,960 invoices. This is the analytical sales base used in this notebook; negative and zero line totals are not included in revenue charts.
+2. The United Kingdom contributes £9,001,744.09, or 84.6% of positive-value sales revenue, showing a strong home-market concentration.
+3. November 2011 is the highest-revenue month in the available data at £1,503,866.78. December 2011 is incomplete because the final recorded transaction is 09 Dec 2011; avoid comparing it as a full month.
+4. The five highest-revenue countries contribute 94.0% of positive-value sales revenue, indicating that revenue is concentrated in a small number of markets.
+5. The highest-revenue product description is 'DOTCOM POSTAGE' at £206,248.77; the largest quantity total belongs to 'PAPER CRAFT , LITTLE BIRDIE' (80,995 units). Revenue leader and volume leader need not be the same product.
+6. There are 133,583 rows (25.0%) without CustomerID. Customer-level analysis therefore covers only rows with an identifiable customer and should not be treated as complete customer coverage.
+7. Order revenue has a median of £303.30 and a mean of £533.17; the mean is higher, consistent with a right-skewed distribution and a small number of large orders.

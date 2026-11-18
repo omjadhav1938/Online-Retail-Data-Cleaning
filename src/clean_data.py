@@ -1,11 +1,3 @@
-"""Clean the UCI Online Retail dataset and create reproducible quality reports.
-
-Usage:
-  python src/clean_data.py --input "data/raw/Online Retail.xlsx"
-  python src/clean_data.py --fetch-uci
-
-The script preserves the original source file and writes derived files to data/processed/.
-"""
 from __future__ import annotations
 import argparse
 import json
