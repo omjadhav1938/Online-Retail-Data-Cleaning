@@ -1,0 +1,12 @@
+column,missing_count,missing_pct
+InvoiceNo,0,0.0
+StockCode,0,0.0
+Description,0,0.0
+Quantity,0,0.0
+InvoiceDate,0,0.0
+UnitPrice,0,0.0
+CustomerID,133583,24.96
+Country,0,0.0
+IsCancellation,0,0.0
+IsReturnOrNegativeQty,0,0.0
+LineTotal,0,0.0

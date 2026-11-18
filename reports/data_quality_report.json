@@ -1,0 +1,87 @@
+{
+  "dataset": "UCI Online Retail (ID 352)",
+  "before_cleaning": {
+    "rows": 541909,
+    "columns": 8,
+    "duplicate_rows": 5268,
+    "missing_values_by_column": {
+      "InvoiceNo": 0,
+      "StockCode": 0,
+      "Description": 1454,
+      "Quantity": 0,
+      "InvoiceDate": 0,
+      "UnitPrice": 0,
+      "CustomerID": 135080,
+      "Country": 0
+    },
+    "dtypes": {
+      "InvoiceNo": "object",
+      "StockCode": "object",
+      "Description": "object",
+      "Quantity": "int64",
+      "InvoiceDate": "datetime64[ns]",
+      "UnitPrice": "float64",
+      "CustomerID": "float64",
+      "Country": "object"
+    }
+  },
+  "cleaning_actions": {
+    "duplicate_rows_removed": 5268,
+    "rows_with_missing_essential_fields_removed": 1454,
+    "invalid_numeric_cells_detected_in_Quantity_and_UnitPrice": 0,
+    "invalid_invoice_dates_detected": 0,
+    "text_fields_trimmed_and_whitespace_normalized": [
+      "InvoiceNo",
+      "StockCode",
+      "Description",
+      "Country"
+    ],
+    "identifier_fields_preserved_as_text": [
+      "InvoiceNo",
+      "StockCode",
+      "CustomerID"
+    ],
+    "date_converted_to_datetime": "InvoiceDate",
+    "numeric_conversions": [
+      "Quantity",
+      "UnitPrice",
+      "CustomerID"
+    ],
+    "cancellations_and_negative_quantities": "retained and flagged; not silently deleted",
+    "derived_column": "LineTotal = Quantity * UnitPrice",
+    "missing_CustomerID": "retained as missing because customer identity is unknown; not imputed"
+  },
+  "after_cleaning": {
+    "rows": 535187,
+    "columns": 11,
+    "duplicate_rows": 0,
+    "missing_values_by_column": {
+      "InvoiceNo": 0,
+      "StockCode": 0,
+      "Description": 0,
+      "Quantity": 0,
+      "InvoiceDate": 0,
+      "UnitPrice": 0,
+      "CustomerID": 133583,
+      "Country": 0,
+      "IsCancellation": 0,
+      "IsReturnOrNegativeQty": 0,
+      "LineTotal": 0
+    },
+    "dtypes": {
+      "InvoiceNo": "string",
+      "StockCode": "string",
+      "Description": "string",
+      "Quantity": "int64",
+      "InvoiceDate": "datetime64[ns]",
+      "UnitPrice": "float64",
+      "CustomerID": "string",
+      "Country": "string",
+      "IsCancellation": "boolean",
+      "IsReturnOrNegativeQty": "bool",
+      "LineTotal": "float64"
+    }
+  },
+  "rows_removed_total": 6722,
+  "rows_retained": 535187
+}
